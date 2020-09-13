@@ -19,8 +19,9 @@ INFO:root:rank=5 pagerank=8.9347e-02 url=1
 
 Part 2:
 Running search query with input 'corona'
-run pagerank.py --data=./lawfareblog.csv.gz --search_query='corona'
+
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --search_query='corona'
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=4.5861e-03 url=www.lawfareblog.com/lawfare-podcast-united-nations-and-coronavirus-crisis
@@ -36,8 +37,9 @@ INFO:root:rank=9 pagerank=2.0339e-03 url=www.lawfareblog.com/cyberlaw-podcast-ho
 ```
 
 Running search query with input 'trump'
-run  pagerank.py --data=./lawfareblog.csv.gz --search_query='trump'
+
 ```
+run  pagerank.py --data=./lawfareblog.csv.gz --search_query='trump'
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=6.6243e-02 url=www.lawfareblog.com/donald-trump-and-politically-weaponized-executive-branch
@@ -51,8 +53,9 @@ INFO:root:rank=7 pagerank=2.2457e-02 url=www.lawfareblog.com/oral-argument-summa
 INFO:root:rank=8 pagerank=2.1462e-02 url=www.lawfareblog.com/dc-circuit-court-denies-trump-rehearing-mazars-case
 INFO:root:rank=9 pagerank=2.1103e-02 url=www.lawfareblog.com/second-circuit-rules-mazars-must-hand-over-trump-tax-returns-new-york-prosecutors
 ```
-run pagerank.py --data=./lawfareblog.csv.gz --search_query='iran'
+
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --search_query='iran'
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=6.6131e-02 url=www.lawfareblog.com/praise-presidents-iran-tweets
@@ -69,8 +72,9 @@ INFO:root:rank=9 pagerank=5.9405e-03 url=www.lawfareblog.com/iran-shoots-down-us
 
 Part 3:
 Get a list of the pages with the largest pagerank
-run pagerank.py --data=./lawfareblog.csv.gz
+
 ```
+run pagerank.py --data=./lawfareblog.csv.gz
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
@@ -86,8 +90,9 @@ INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief
 ```
 
 Get a list of the pages with the largest pagerank but with the filter_ratio = 0.2 to remove all non-article pages
-run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2
+
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=4.2773e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
@@ -105,8 +110,9 @@ INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
 Part 4:
 
 Next few runs show the different results shown when alpha values are altered for alterations in how fast they converge, and when they have a filter for non-article urls. 
-run pagerank.py --data=./lawfareblog.csv.gz --verbose 
+
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --verbose 
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=8.4156e+00 url=www.lawfareblog.com/litigation-documents-related-appointment-matthew-whitaker-acting-attorney-general
@@ -121,8 +127,8 @@ INFO:root:rank=8 pagerank=8.4156e+00 url=www.lawfareblog.com/upcoming-events
 INFO:root:rank=9 pagerank=8.4156e+00 url=www.lawfareblog.com/about-lawfare-brief-history-term-and-site
 ```
 
-run pagerank.py --data=./lawfareblog.csv.gz --verbose --alpha=0.99999
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --verbose --alpha=0.99999
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=1.0624e+01 url=www.lawfareblog.com/snowden-revelations
@@ -153,8 +159,8 @@ INFO:root:rank=8 pagerank=1.5597e+00 url=www.lawfareblog.com/summary-david-holme
 INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
 ```
 
-run pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=4.7947e+01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
@@ -169,8 +175,8 @@ INFO:root:rank=8 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-us-china
 INFO:root:rank=9 pagerank=1.0863e+00 url=www.lawfareblog.com/water-wars-sinking-feeling-philippine-china-relations
 ```
 
-run pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=4.2773e+00 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
@@ -185,8 +191,8 @@ INFO:root:rank=8 pagerank=1.5597e+00 url=www.lawfareblog.com/summary-david-holme
 INFO:root:rank=9 pagerank=9.1265e-01 url=www.lawfareblog.com/events
 ```
 
-run pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --verbose --filter_ratio=0.2 --alpha=0.99999
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=4.7947e+01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
@@ -206,8 +212,9 @@ Part 1
 
 Using personalization vector to filter the personalization vector
 Webpage is considered important if other coronavirus websites think that this website is important
-run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona'
+
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona'
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=8.8870e-01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
@@ -243,8 +250,9 @@ INFO:root:rank=9 pagerank=1.9066e-02 url=www.lawfareblog.com/congressional-homel
 Part 2
 
 Finds all webpages that have an emphasis on corona, but then removes them if they contain the word corona in them.
-run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
+
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='corona' --search_query='-corona'
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=8.8870e-01 url=www.lawfareblog.com/covid-19-speech-and-surveillance-response
@@ -262,8 +270,8 @@ INFO:root:rank=9 pagerank=6.4847e-02 url=www.lawfareblog.com/livestream-house-fo
 Part 3
 
 Finds all webpages that have an emphasis on North Korea, but then removes them if they have the word nuclear in them.
-run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='north korea' --search_query='-nuclear'
 ```
+run pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='north korea' --search_query='-nuclear'
 DEBUG:root:computing indices
 DEBUG:root:computing values
 INFO:root:rank=0 pagerank=2.2198e-01 url=www.lawfareblog.com/whats-point-charging-foreign-state-linked-hackers
